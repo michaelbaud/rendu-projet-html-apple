@@ -1,0 +1,284 @@
+/*---------------------------------
+GENERAL
+---------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'font';
+}
+
+@font-face {
+	font-family: 'fontMain';
+	src: url('fonts/myriad-set-pro_ultralight.ttf');
+}
+
+@font-face {
+	font-family: 'font';
+	src: url('fonts/myriad-set-pro_text.ttf');
+}
+
+
+/*---------------------------------
+HEADER
+---------------------------------*/
+.menu1 {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	opacity: 0.8;
+	top: 0;
+	z-index: 999;
+}
+
+.menu1 .header .header-menu {
+	display: flex;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.menu1 .header .header-menu a {
+	flex: 1;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+}
+
+.miniBloc {
+	font-size: 1.4em;
+}
+/*---------------------------------
+MENU RESPONSIVE
+---------------------------------*/
+
+/* logo */
+
+.bannerMenu2 {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	height: 50px;
+	opacity: 0.8;
+	top: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.logoMenuBox {
+	position: relative;
+	z-index: 9999;	
+}
+
+.menuResp {
+	width: 50px;
+	height: 50px;
+	margin-left: -6px;
+}
+
+/* menu 2 */
+
+.menu2 {
+	position: fixed;
+	top: 50px;
+	float: left;
+	z-index: 9999;
+	height: 100%;
+	background-color: black;
+	width: 100%;
+	border-radius: 0 0 10px 0;
+	display: flex;
+}
+
+.menu2 nav {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.menu2 a {
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding-top: 30px;
+	flex: 1;
+}
+
+.nav {
+	margin-left: -100%;
+	transition-duration: 0.2s;
+}
+
+.nav_open {
+	margin-left: 0;
+	transition-duration: 0.2s;
+}
+
+/* si écran moins de 950px alors... */
+@media screen and (max-width: 950px) {
+	.menu1 {
+		display: none;
+	}
+}
+
+/* si écran plus de 950px alors... */
+@media screen and (min-width: 950px) {
+	.menu2, .logoMenuBox, .bannerMenu2 {
+		display: none;
+	}
+}
+
+/*---------------------------------
+MAIN
+---------------------------------*/
+
+.main {
+	margin-top: 80px;
+}
+
+.main .mainBlocGeneral {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.main .columns {
+	text-align: center;
+}
+
+.main .columns .mainBloc2 {
+	margin: auto;
+}
+
+.main .columns .mainBloc2 .fin {
+	font-family: fontMain;
+}
+
+.main .columns .mainBloc2MiniBloc {
+	font-family: fontMain;
+}
+
+/*---------------------------------
+SECTION 2
+---------------------------------*/
+
+.blocSection2 {
+	
+}
+
+.blocSection2 .columns {
+	
+}
+
+.blocSection2 .columns .column {
+	margin: 0;
+	padding: 0;
+}
+
+.blocSection2 .columns .column .photo {
+	min-height: 200px;
+	background-position: center;	
+}
+
+/*---------------------------------
+SECTION 3
+---------------------------------*/
+
+.blocSection3 .container {
+	margin: auto;
+	text-align: center;
+}
+
+/*---------------------------------
+FOOTER
+---------------------------------*/
+
+.sectionFooter {
+	background-color: #F2F2F2;
+}
+
+.sectionFooter .footer {
+	
+	margin: auto;
+	background-color: #F2F2F2;
+	padding-bottom: 0px;
+}
+
+.sectionFooter .footer .column {
+	padding: 0;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+}
+
+.sectionFooter .footer .column h6 {
+	font-weight: bold;
+	color: #060606;
+}
+
+.sectionFooter .footer .column a {
+	color: #9E9E9E;
+}
+
+.sectionFooter .footer .column .columnSousBloc{
+	display: flex;
+	flex-direction: column;
+}
+
+/*---------------------------------
+FOOTER RESPONSIVE
+---------------------------------*/
+
+/* si écran moins de 950px alors... */
+@media screen and (max-width: 950px) {
+	.hidden {
+		display: none;
+	}
+
+	.footerResp {
+		text-align: center;
+	}
+}
+
+/*---------------------------------
+COPYRIGHT
+---------------------------------*/
+
+.copy {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8em;
+	color: #A5A5A5;
+}
+
+.copy .copyBloc1 {
+	border-bottom: 1px solid #D6D6D6;
+}
+
+.copy .copyBloc2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copy .copyBloc2 .copyBloc2MiniBloc {
+	display: flex;
+}
+
+.copy .copyBloc2 .copyBloc2MiniBloc .copyBloc2MiniMiniBloc {
+	display: flex;
+}
+
+.copy .copyBloc2 .copyBloc2MiniBloc .copyBloc2MiniMiniBloc .item {
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
